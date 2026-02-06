@@ -1,5 +1,0 @@
-#EXTM3U
-#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",NAME="Thai",DEFAULT=YES,URI="https://rumble.com/hls-vod/6yrz46/playlist.m3u8"
-#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",NAME="English",DEFAULT=NO,URI="https://rumble.com/hls-vod/6yrz46/playlist.m3u8"
-#EXT-X-STREAM-INF:BANDWIDTH=1280000,AUDIO="audio"
-video_content.m3u8
