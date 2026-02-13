@@ -1,0 +1,23 @@
+﻿#EXTM3U
+#EXT-X-VERSION:3
+
+# --- ส่วนที่ 1: ประกาศทางเลือกเสียง ---
+# 1. เสียงภาษาไทย (ดึงมาจากตัววิดีโอหลัก)
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio-group",NAME="Thai",LANGUAGE="th",DEFAULT=YES,AUTOSELECT=YES,URI="https://1a-1791.com/video/fwe2/88/s8/2/W/V/0/W/WV0Wz.gaa.tar?r_file=chunklist.m3u8&r_type=application%2Fvnd.apple.mpegurl&r_range=751664640-751692894"
+
+# 2. เสียงภาษาจีน (ลิงค์ที่คุณส่งมาให้ก่อนหน้านี้)
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio-group",NAME="Chinese",LANGUAGE="zh",DEFAULT=NO,AUTOSELECT=YES,URI="https://vz-090d8744-903.b-cdn.net/f8a342c9-94ec-4d18-ac95-b6418063c4d0/audio_2/audio.m3u8"
+
+
+# --- ส่วนที่ 2: เชื่อมโยงวิดีโอกับกลุ่มเสียงด้านบน ---
+# ความละเอียด 1080p
+#EXT-X-STREAM-INF:BANDWIDTH=4099000,RESOLUTION=1920x1080,AUDIO="audio-group"
+https://1a-1791.com/video/fwe2/88/s8/2/W/V/0/W/WV0Wz.haa.tar?r_file=chunklist.m3u8&r_type=application%2Fvnd.apple.mpegurl&r_range=1442780160-1442808618
+
+# ความละเอียด 720p
+#EXT-X-STREAM-INF:BANDWIDTH=2135000,RESOLUTION=1280x720,AUDIO="audio-group"
+https://1a-1791.com/video/fwe2/88/s8/2/W/V/0/W/WV0Wz.gaa.tar?r_file=chunklist.m3u8&r_type=application%2Fvnd.apple.mpegurl&r_range=751664640-751692894
+
+# ความละเอียด 480p
+#EXT-X-STREAM-INF:BANDWIDTH=1051000,RESOLUTION=854x480,AUDIO="audio-group"
+https://1a-1791.com/video/fwe2/88/s8/2/W/V/0/W/WV0Wz.caa.tar?r_file=chunklist.m3u8&r_type=application%2Fvnd.apple.mpegurl&r_range=370063360-370091535
